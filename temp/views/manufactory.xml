@@ -1,0 +1,25 @@
+<odoo>
+  <record id="view_manufatory_form_inherit" model="ir.ui.view">
+    <field name="name">manufactory.form.inherit</field>
+    <field name="model">manufactory</field>
+    <field name="inherit_id" ref="manufactory_form_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//group[@name='group_production']" position="after">
+        <group>
+          <field name="production_note"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_manufactory_tree_inherit" model="ir.ui.view">
+    <field name="name">manufactory.tree.inherit</field>
+    <field name="model">manufactory</field>
+    <field name="inherit_id" ref="mrp.manufactory_tree_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='date_planned_start']" position="after">
+        <field name="production_note"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

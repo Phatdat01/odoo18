@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Form view -->
+    <record id="view_fish_weight_form" model="ir.ui.view">
+        <field name="name">manufactory.fish_weight.form</field>
+        <field name="model">manufactory.fish_weight</field>
+        <field name="arch" type="xml">
+            <form string="Fish Weight">
+                <sheet>
+                    <group>
+                        <field name="fish_id"/>
+                        <field name="weight"/>
+                        <field name="fish_type"/>
+                        <field name="user_name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Windows action -->
+    <record id= "action_fish_weight" model="ir.actions.act_window">
+        <field name="name">Fish weight</field>
+        <field name="res_model">manufactory.fish_weight</field>
+        <field name="view_mode">list,form,kanban</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_similing_face">Create your first fish weight</p>
+        </field>
+    </record>
+</odoo>

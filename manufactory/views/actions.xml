@@ -1,0 +1,8 @@
+<odoo>
+  <record id="action_popup_demo" model="ir.actions.act_window">
+    <field name="name">Mở Popup</field>
+    <field name="res_model">popup.demo.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field> <!-- Hiển thị dưới dạng popup -->
+  </record>
+</odoo>

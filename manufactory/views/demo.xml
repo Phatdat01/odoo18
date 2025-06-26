@@ -1,0 +1,4 @@
+<button name="%(action_popup_demo)d"
+        string="Mở Popup"
+        type="action"
+        class="oe_highlight"/>

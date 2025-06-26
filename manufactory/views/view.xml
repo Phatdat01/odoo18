@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="student_list_view_extend" model="ir.ui.view">
+        <field name="name">student.list.view.extend</field>
+        <field name="model">school.student</field>
+        <field name="inherit_id" ref="student_list_view_demo"></field>
+        <field name="arch" type="xml"></field>
+    </record>
+</odoo>
