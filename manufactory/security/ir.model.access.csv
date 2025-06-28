@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-manufactory.access_manufactory_fish_weight,access_manufactory_fish_weight,manufactory.model_manufactory_fish_weight,base.group_user,1,0,0,0
+manufactory.access_manufactory_fish_weight,access_manufactory_fish_weight,manufactory.model_manufactory_fish_weight,base.group_user,1,1,1,1
+access_fish_weight_popup,access.fish.weight.popup,model_fish_weight_popup,,1,1,1,1

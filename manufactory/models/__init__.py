@@ -1,1 +1,1 @@
-from . import manufactory
+from . import manufactory, my_popup_wizard
