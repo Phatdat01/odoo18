@@ -12,13 +12,17 @@ class Manufactory(models.Model):  # Dùng TransientModel cho popup
     image_1920 = fields.Binary('Hình ảnh', attachment=True, help="This is the image of the fish.")
     
     def open_popup(self):
+
+        self.ensure_one()  # sẽ fail nếu self là int
+
         return {
             'type': 'ir.actions.act_window',
-            'name': 'Popup',
-            'res_model': 'fish.weight.popup',  # <-- tạo model popup này
+            'name': 'Fish Popup',
+            'res_model': 'fish.weight.popup',
             'view_mode': 'form',
             'target': 'new',
             'context': {
-                'default_note': 'This is a default note'
+                'default_fish_id': self.fish_id,
+                'default_note': 'Auto-filled from main form'
             }
         }

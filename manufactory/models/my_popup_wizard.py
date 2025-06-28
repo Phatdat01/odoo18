@@ -6,6 +6,7 @@ class FishWeightPopup(models.TransientModel):  # transient model dùng cho wizar
     _description = 'Popup for Fish Weight'
 
     note = fields.Text('Ghi chú')  # trường ví dụ, bạn có thể thêm gì tùy ý
+    fish_id = fields.Integer('Cá số')
 
     def action_confirm(self):
         # Ví dụ xử lý, sau đó đóng popup
