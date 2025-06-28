@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!-- Search view -->
+    <record id="manufactory_fish_weight_view_search" model="ir.ui.view">
+        <field name="name">manufactory.fish_weight.view.search</field>
+        <field name="model">manufactory.fish_weight</field>
+        <field name="arch" type="xml">
+            <search string="Search Opportunities">
+                <field name="fish_id"/>
+                <field name="fish_type"/>
+            </search>
+        </field>
+    </record>
 
     <!-- Form view -->
     <record id="view_fish_weight_form" model="ir.ui.view">
@@ -30,6 +41,21 @@
             </form>
         </field>
     </record>
+
+    <!-- Tree view -->
+    <record id="manufactory_fish_weight_view_tree" model="ir.ui.view">
+        <field name="name">manufactory.fish_weight.list</field>
+        <field name="model">manufactory.fish_weight</field>
+        <field name="arch" type="xml">
+            <list string="Channel" editable="bottom">
+                <field name="fish_id"/>
+                <field name="weight"/>
+                <field name="fish_type"/>
+                <field name="user_name"/>
+            </list>
+        </field>
+    </record>
+
     <!-- Windows action -->
     <record id= "action_fish_weight" model="ir.actions.act_window">
         <field name="name">Fish weight</field>
