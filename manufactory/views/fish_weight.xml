@@ -47,7 +47,7 @@
         <field name="name">manufactory.fish_weight.list</field>
         <field name="model">manufactory.fish_weight</field>
         <field name="arch" type="xml">
-            <list string="Channel" editable="bottom">
+            <list string="Channel">
                 <field name="fish_id"/>
                 <field name="weight"/>
                 <field name="fish_type"/>
